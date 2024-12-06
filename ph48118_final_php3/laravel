@@ -1,0 +1,26 @@
+- composer install -> cai dat lai tat ca thu vien can su dung
+- composer update -> cap nhat lai cac thu vien he thong su dung
+- php artisan ser -> de chay du an 
+- php artisan key: generate -> Gender ra APP_KEY tong file env
+- php artisan make:migration create_ten_file_table -> tao ten file_migration moi
+- php artisan migrate: chay cac migrate
+- php artisan migrate:rollback -> Rollback lai thao tac cuoi cung cua migration
+- php artisan migrate:reset -> Rollback lai thao tac cua migration
+- php artisan migrate:refresh-> Rollback lai tat ca thao tac cua migration sau do tu dong chay migration
+- php artisan migrate:rollback --step=5 -> Rollback lai 5 lan truoc do
+- php artisan migrate:rollback --batch=5 -> Rollback lai buoc so 5
+
+- php artisan make:seeder UserSeeder =>tạo 1 file để tạo dữ liệu mẫu 
+- php artisan db:seed => chạy tất cả các seed
+- php artisan db:seed --class=UserSeeder => chạy 1 seed
+- php artisan migrate:fresh --seed => vừa reset, migrate và seeder
+
+- php artisan make:controller TenController => Tạo 1 controller mới
+- php artisan route:list => list ra toafn bo route co trong du an
+- php artisan storage:link => tạo liên kết các file để hiển thị ra người dùng
+- php artisan make:request TenRequest => Tạo 1 file request để thực hiện validate
+
+- php artisan make:controller Admins/AdminSanPhamController --resource
+- php artisan make:model TênModel --all => Tạo tất cả
+
+- php artisan make:resource TênResource => tạo 1 file để hiển thị dữ liệu API
